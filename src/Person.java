@@ -8,12 +8,23 @@ class Person {
     Constructor akan dijlankan ketika object dibuat
      */
     // construct
-    Person(String paramName, String paramAddress){
-        name = paramName;
-        address = paramAddress;
+//    Person(String paramName, String paramAddress){
+//        name = paramName;
+//        address = paramAddress;
+//    }
+//    variable shadowing
+//    Person(String name, String address){
+//        name = name;
+//        address = address;
+//    }
+
+//    solusi variable shadowing
+    Person(String name, String address){
+        this.name = name;
+        this.address = address;
     }
 
-    // constructor overloading
+//    constructor overloading
     Person(String paramName){
      this(paramName,null); // memanggil constructor lain
     }
@@ -22,7 +33,7 @@ class Person {
         this(null); // memanggil constructor lain
     }
 
-    void sayHello(String paramName) {
-        System.out.println("Hello " + paramName + ", My Name Is " + name);
+    void sayHello(String name) {
+        System.out.println("Hello " + name + ", My Name Is " + this.name);
     }
 }
