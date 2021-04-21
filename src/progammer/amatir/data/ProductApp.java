@@ -10,6 +10,7 @@ public class ProductApp {
 
         Product product2 = new Product("Mobil Mobilio", 2000000);
         System.out.println(product.equals(product2));
+        System.out.println(product.hashCode() == product2.hashCode());
 
     }
 }

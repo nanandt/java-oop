@@ -31,7 +31,7 @@ public class Product {
         return result;
     }
 
-    //    public boolean equals(Object o){
+//    public boolean equals(Object o){
 //        if (o == this){
 //            return true;
 //        }
